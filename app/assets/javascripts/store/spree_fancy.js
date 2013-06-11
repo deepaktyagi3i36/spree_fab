@@ -1,4 +1,4 @@
-//= require store/spree_frontend
+//= require store/spree_core
 //= require jquery.hoverIntent
 //= require jquery-ui
 //= require jquery.bxslider
@@ -17,15 +17,14 @@ $(function(){
 
     var cached_carousel_1 = $('#featured-products .carousel').html();
     var cached_carousel_2 = $('#latest-products .carousel').html();
-
+    
     $('#home-slider > ul').bxSlider({
       adaptiveHeight: true,
       auto: true,
       autoHover: true,
       useCSS: true,
       controls: false,
-      pagerSelector: '.slider-pager',
-      touchEnabled: false
+      pagerSelector: '.slider-pager'
     });
 
     $('.carousel').bxSlider({
@@ -36,15 +35,14 @@ $(function(){
       slideMargin: 10,
       auto: true,
       autoHover: true,
-      controls: false,
-      touchEnabled: false
+      controls: false
     });
 
     $("#home-slider .product-description").dotdotdot({
       watch: true,
       height: 250
     });
-
+    
   }
 
   // Make buttons from radio inoputs

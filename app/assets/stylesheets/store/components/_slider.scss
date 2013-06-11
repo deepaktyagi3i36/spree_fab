@@ -6,8 +6,7 @@
   border-top: 5px solid lighten($c_green, 40);
   border-bottom: 5px solid lighten($c_green, 40);
   overflow: hidden;
-  padding: 0px;
-
+  
   .subheader-wrapper {
     padding: 20px 10px;
     color: white;
@@ -25,23 +24,18 @@
 .slider-pager {
   position: absolute;
   width: 100%;
-  top: -35px;
+  top: -40px;
 }
 
-.bx-wrapper {
+.slider-pager, .bx-wrapper {
   .bx-pager.bx-default-pager {
-    .bx-pager-item {
-      display: inline-block;
-      padding-right: 3px;
-    }
-
     a {
       background-color: #dedede;
 
       &.active, &:hover {
         background-color: $c_green;
       }
-    }
+    }  
   }
 }
 
@@ -49,8 +43,8 @@
   margin-bottom: 0;
 
   .bx-viewport {
-    @include box-shadow(none);
-    background-color: transparent;
+    background-color: transparent;  
+    box-shadow: none;
     border: none;
   }
   .bx-controls {

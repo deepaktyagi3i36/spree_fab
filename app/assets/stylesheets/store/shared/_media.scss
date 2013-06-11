@@ -53,14 +53,6 @@
       }
     }
 
-    #update-cart .coupon-code-field {
-      position: absolute;
-      margin-top: -30px !important;
-      padding-left: 380px !important;
-      width: 300px !important;
-      margin-left: -20px;
-    }
-
     #billing, #shipping {
       input {
         width: 220px;
@@ -93,6 +85,11 @@
     .container {
       padding: 0;
       width: 768px;
+    }
+
+    #update-cart .coupon-code-field {
+      margin-top: -30px !important;
+      width: 280px !important;
     }
 
   }
@@ -153,7 +150,7 @@
       padding-left: 0px !important;
       position: relative;
       text-align: center;
-      right: 0;
+      right: auto;
 
       label {
         font-size: 12px;
@@ -188,14 +185,13 @@
     }
 
     #main-image {
-      width: 270px;
-      height: 270px;
+      width: 300px;
+      height: 300px;
       margin: 0 auto;
-      padding: 15px;
 
       img {
-        @include border-radius(80px !important);
-        padding: 10px 0 0 0;
+        @include border-radius(40px);
+        padding: 30px 0 0 0;
       }
     }
 
@@ -258,9 +254,6 @@
     }
 
     ul#products {
-      li.product-row {
-        width: 300px;
-      }
       a.info {
         font-size: 12px;
         font-weight: 600;
@@ -415,9 +408,6 @@
     }
 
     ul#products {
-      li.product-row {
-        width: 440px;
-      }
       a.info {
         font-size: 12px;
         font-weight: 600;
@@ -476,13 +466,14 @@
       }
 
     }
-
   }
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 767px) {
   body {
     #update-cart .coupon-code-field {
       width: 300px !important;
+      right: auto;
     }
   }
 }
